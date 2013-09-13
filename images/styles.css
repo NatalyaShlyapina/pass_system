@@ -1,0 +1,158 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url(images/bgnoise_lg.png);
+	font-size:130%;
+}
+
+input{
+		border-radius: 15px;
+}
+#addNewCl{
+		width: 80%;
+		margin: 0 auto;
+		padding: 5%;
+		text-align: center;
+}
+#addNewCl fieldset{
+/*	background-color: #ECEDEA;*/
+	border-radius: 30px;
+	border: 5px solid #FFFFFF;
+}
+#addNewCl legend{
+		font-size: 200%;
+}
+#addNewCl form{
+	padding: 3%;
+}
+#addNewCl input{
+		padding: 3%;
+		border: 3px solid #ACB7AA;
+}
+#addNewCl table th{
+	 background: -webkit-linear-gradient(top right, #b8b9b1, #fff); /* для webkit-браузеров */
+      background: -moz-linear-gradient(top right, #b8b9b1, #fff); /* для firefox 3.6+ */
+      background: -o-linear-gradient(top right, #b8b9b1, #fff); /* для Opera 11.10+ */
+      background: -ms-linear-gradient(top right, #b8b9b1, #fff); /* для IE10+ */
+      text-align: center; 
+      vertical-align: text-top;
+      border-collapse: collapse;
+	  width: 50%;
+}
+#addNewCl td,th{
+	padding: 1%;
+}
+/*поле с выходом*/
+.logout{
+	float: right;
+}
+span{
+	font-size: 120%;
+}
+/*блок с двумя кнопками Сотрудники и посетители*/
+#mainAdmin{
+	width: 50%;
+	margin: 0 auto;
+	padding: 10%;
+	text-align: center;
+}
+#response{
+	border: 5px solid #EAEBE8;
+	width: 50%;
+	margin: 0 auto;
+	padding: 15%;
+	overflow: auto;
+}
+#response img{
+	text-align: center;
+}
+.button {
+    margin: 25px;
+    text-decoration: none;
+    font: bold 1.2em 'Trebuchet MS',Arial, Helvetica; /* Изменяйте em для масштабирования кнопки */
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    
+    border: 1px solid #9c9c9c; /* Запасной стиль */
+    border: 1px solid rgba(0, 0, 0, 0.3);            
+    
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    
+    box-shadow: 0 0 .05em rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 .05em rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 .05em rgba(0,0,0,0.4);
+}
+
+.button, .button span {
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+}
+
+.button span {
+    border-top: 1px solid #fff; /* Fallback style */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 0.5em 2.5em;
+    
+    /* Фоновый паттерн */
+    
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
+                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05))),
+                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05)));
+    background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
+                      -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
+                      -moz-linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%),
+                      -moz-linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%);
+
+    /* Настройки паттерна */
+    
+    -moz-background-size: 3px 3px;
+    -webkit-background-size: 3px 3px;            
+}
+
+.button:hover {
+    box-shadow: 0 0 .1em rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 .1em rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 .1em rgba(0,0,0,0.4);
+}
+
+.button:active  {
+    /* Опускаем на 1px при нажатии */
+    position: relative;
+    top: 1px;
+}
+.button-blue {
+    background: #4477a1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#81a8cb), to(#4477a1) );
+    background: -moz-linear-gradient(-90deg, #81a8cb, #4477a1);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81a8cb', endColorstr='#4477a1');
+}
+
+.button-blue:hover {
+    background: #81a8cb;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4477a1), to(#81a8cb) );
+    background: -moz-linear-gradient(-90deg, #4477a1, #81a8cb);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4477a1', endColorstr='#81a8cb');            
+}
+
+.button-blue:active  {
+    background: #4477a1;
+}
+/***********************/
+			h1 {
+				font: 45pt "RieslingRegular", Tahoma, Arial, sans-serif;
+			}
+			.wrapper img {
+				border-width: 30px;
+
+				border-image:url("images/frame.png") 30 repeat;
+				-o-border-image:url("images/frame.png") 30 repeat;
+				-moz-border-image:url("images/frame.png") 30 repeat;
+				-webkit-border-image:url("images/frame.png") 30 repeat;
+
+		        box-shadow:  0px 2px 3px 0px rgba(0, 0, 0, .5);
+				-webkit-box-shadow:  0px 2px 3px 0px rgba(0, 0, 0, .5);
+			}
+/***************************************/
