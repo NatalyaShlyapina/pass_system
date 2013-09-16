@@ -11,7 +11,28 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
+         <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+       
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map ("map", {
+                center: [46.28, 30.44],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([46.457325, 30.713337], {
+                hintContent: '',
+                balloonContent: ''
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
@@ -21,6 +42,14 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <style>
+            .first{
+                background-color: red;
+            }
+            .second{
+                background-color: yellow;
+            }
+            </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -71,6 +100,25 @@
     <div class="jumbotron">
       <div class="container">
         <h1>JavaScript</h1>
+        <br/>
+        <p id='story'>
+            1<strong>2</strong>3
+        </p>
+        <input type='text' name='val1' id='val1' onmouseout='this.className="first"' onmouseover='this.className="second"'>
+        <script>
+            
+            //document.getElementById('story').firstChild.nodeValue='88';
+            var node=document.getElementById('story');
+            while(node.firstChild)
+                node.removeChild(node.firstChild);
+            node.appendChild(document.createTextNode("new VAlue"));
+        </script>
+       <div id="map" style="width: 100%; height: 400px"></div>
+      <!--  <video src="lesson1.mp4" poster="movie.jpg" controls>
+        This is fallback content to display if the browser
+        does not support the video element.
+        </video>-->
+
         <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
       </div>
